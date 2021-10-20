@@ -8,7 +8,7 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - use: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       # if a PR is from this repository (not a fork), enable automerge
       - name: Enable automerge
