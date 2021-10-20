@@ -15,9 +15,7 @@ jobs:
 
   # release: 
   #   if: github.actor == 'phish108' || startsWith(github.actor, 'dependabot')
-
   #   runs-on: ubuntu-latest
-
   #   steps:
   #     - id: contributor 
   #       run: echo ::set-output name=release::minor
