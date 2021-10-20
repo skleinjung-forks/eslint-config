@@ -8,7 +8,10 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
+      # checkout the PR source branch so we can delete it after merge
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
 
       # if a PR is from this repository (not a fork), enable automerge
       - name: Enable automerge
